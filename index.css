@@ -63,16 +63,6 @@ main {
   margin: auto;
 }
 
-/* to align text vertically {
-  padding-top: 15px;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-  height: calc(80% - 20px);
-  width: 30px;
-  margin: auto;
-  font-size: 32px;
-} */
-
 .btns {
   width: 100px;
   margin: auto;
@@ -98,14 +88,18 @@ button {
 .bee {
   height: 50%;
   width: 100%;
-  border-bottom: 1px solid black;
 }
 
 .ant img,
 .bee img {
   width: 65%;
   float: left;
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.ant img:hover,
+.bee img:hover {
+  cursor: crosshair;
 }
 
 .ant p,
@@ -120,4 +114,28 @@ button {
 .circle {
   border-radius: 50%;
   background-color: yellow;
+}
+
+.pauseplay {
+  display: none;
+  width: 500px;
+  height: 500px;
+  background-color: greenyellow;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+}
+
+.text {
+  text-align: center;
+  font-size: 70px;
+  height: 70%;
+  padding-top: 50px;
+}
+
+.ctn {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: auto;
 }

@@ -21,23 +21,29 @@
                         <div class="val">0</div>
                     </div>
                     <div class="btns">
-                        <button class="start" onclick="startGame()">Start</button>
+                        <button class="start" onclick="game()">Start</button>
                         <button class="pause" onclick="pauseGame()">Pause</button>
                     </div>
                     <div class="points">
                         <!-- image of ant and bees and points for ant smashing -->
                         <div class="ant">
-                            <img src="ant.png" alt="Ant">
+                            <img src="ant.png" alt="Ant" onclick="updateScore()">
                             <p>100 pts</p>
                         </div>
                         <div class="bee">
-                            <img src="bee.png" alt="Bee">
+                            <img src="bee.png" alt="Bee" onclick="endGame()">
                             <p>Game Over</p>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <div class="pauseplay">
+            <div class="text">
+                Game Paused. Press OK to continue playing.
+            </div>
+            <button class="ctn" onclick="ctnGame()">OK</button>
+        </div>
         <footer>
             &copy MCA 2104 - CSC 206 - Web Development
         </footer>
