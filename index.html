@@ -13,7 +13,12 @@
         <main>
             <div class="scoreboard">
                 <div class="board">
-                    
+                    <div class="ants">
+                        <img src="ant.png" alt="Ant" onclick="updateScore()" class="run">
+                    </div>
+                    <div class="bees">
+                        <img src="bee.png" alt="Bee" onclick="endGame()">
+                    </div>
                 </div>
                 <div class="score">
                     <div class="box">
@@ -27,11 +32,11 @@
                     <div class="points">
                         <!-- image of ant and bees and points for ant smashing -->
                         <div class="ant">
-                            <img src="ant.png" alt="Ant" onclick="updateScore()">
+                            <img src="ant.png" alt="Ant">
                             <p>100 pts</p>
                         </div>
                         <div class="bee">
-                            <img src="bee.png" alt="Bee" onclick="endGame()">
+                            <img src="bee.png" alt="Bee">
                             <p>Game Over</p>
                         </div>
                     </div>
@@ -40,12 +45,11 @@
         </main>
         <div class="pauseplay">
             <div class="text">
-                Game Paused. Press OK to continue playing.
             </div>
             <button class="ctn" onclick="ctnGame()">OK</button>
         </div>
         <footer>
-            &copy MCA 2104 - CSC 206 - Web Development
+            &copy; MCA 2104 - CSC 206 - Web Development &copy;
         </footer>
     </body>
 </html>
