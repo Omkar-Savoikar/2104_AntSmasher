@@ -80,7 +80,7 @@ function updateScore() {
     let div = document.getElementById(divId);
     document.getElementById(divId).removeChild(div.firstChild);
     antCount--;
-    score += 100;
+    score += 10;
     score_val.innerHTML = score;
     document.getElementById(divId).remove();
 }
@@ -100,7 +100,7 @@ function clearBoard() {
 function endGame() {
     clearInterval(rag);
     document.getElementsByClassName("start")[0].innerHTML = "Start";
-    document.getElementsByClassName("text")[0].innerHTML = 'Game ended. Your score is' + score;
+    document.getElementsByClassName("text")[0].innerHTML = 'Game ended. Your score is ' + score;
     document.getElementsByClassName("ctn")[0].innerHTML = "OK";
     document.getElementsByClassName("pauseplay")[0].style.display = "block";
     document.getElementsByClassName("bees")[0].getElementsByTagName("img")[0].style.display = "none";
