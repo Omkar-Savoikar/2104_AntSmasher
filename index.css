@@ -44,14 +44,16 @@ main {
 	overflow: hidden;
 }
 
-.ants, .bees {
+.ants,
+.bees {
 	height: 84px;
 	width: 84px;
 	float: left;
 	position: absolute;
 }
 
-.ants img, .bees img {
+.ants img,
+.bees img {
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -67,8 +69,15 @@ main {
 }
 
 @keyframes myanim {
-	0% {top: 0vh;}
-	100% {top: calc(100vh - 285px)};
+	0% {
+		top: 0vh;
+	}
+
+	100% {
+		top: calc(100vh - 285px)
+	}
+
+	;
 }
 
 .ants img:hover,
