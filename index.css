@@ -74,10 +74,8 @@ main {
 	}
 
 	100% {
-		top: calc(100vh - 285px)
+		top: calc(100vh - 285px);
 	}
-
-	;
 }
 
 .ants img:hover,
