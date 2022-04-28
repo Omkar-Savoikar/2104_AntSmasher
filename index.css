@@ -68,7 +68,7 @@ main {
 
 @keyframes myanim {
 	0% {top: 0vh;}
-	100% {top: 70vh;} 
+	100% {top: calc(100vh - 285px)};
 }
 
 .ants img:hover,

@@ -119,8 +119,6 @@ function game() {
 }
 
 window.onclick = (e) => {
-    if (document.getElementsByClassName("start")[0].innerHTML == "Start")
-        if (e.target.className != "start") return;
     if (e.target.tagName.toLowerCase() != "img") return;
     id = e.target.id;
     if (e.target.alt.toLowerCase() == "ant") updateScore();
